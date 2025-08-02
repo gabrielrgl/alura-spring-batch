@@ -23,4 +23,5 @@ public class DataSourceConfig {
     public PlatformTransactionManager transactionManager(@Qualifier("dataSource") DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }
+
 }
